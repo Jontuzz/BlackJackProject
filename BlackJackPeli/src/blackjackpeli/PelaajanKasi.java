@@ -33,7 +33,6 @@ public class PelaajanKasi {
         for (Kortti pelaajanKortti : this.kortit) {
             //kortin arvo 2-10:	käden summaan lisätään kortin numeroa vastaava arvo(2 lisätään 2, 3 lisätään 3.)
             if (pelaajanKortti.getArvo() >= 2 && pelaajanKortti.getArvo() <= 10) {
-                System.out.println("Kortti: " + pelaajanKortti + " Kortin arvo: " + pelaajanKortti.getArvo());
                 this.pelaajanKadenSumma += pelaajanKortti.getArvo();
             }
             //kortin arvo 11-13: käden summaan lisätään 10

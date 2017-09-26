@@ -26,5 +26,12 @@ public class MainTesti {
         pelaaja11TO13.otaKortti(new Kortti(11, "Hertta"));
         pelaaja11TO13.otaKortti(new Kortti(13, "Pata"));
         System.out.println(pelaaja11TO13.selvitaSumma()); //TOIMII 11 = 10 ja 13 = 10; 10 + 10 = 20
+        
+        System.out.println("-----------------------------");
+        PelaajanKasi assa = new PelaajanKasi();
+        System.out.println("-----------------------------");
+        assa.otaKortti(new Kortti(1, "Ruutu"));
+        assa.otaKortti(new Kortti(5, "Ruutu"));
+        System.out.println(assa.selvitaSumma()); //1 = 11;
     }
 }
