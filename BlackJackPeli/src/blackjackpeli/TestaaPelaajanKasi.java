@@ -11,6 +11,7 @@ package blackjackpeli;
  */
 public class TestaaPelaajanKasi {
     public static void main(String[] args) {
-        
+        PelaajanKasi pelaajanKasi = new PelaajanKasi();
+        pelaajanKasi.otaKortti(new Kortti(1, "Pata"));
     }
 }
