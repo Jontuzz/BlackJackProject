@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package blackjack;
+package blackjackpeli;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -33,10 +33,10 @@ public class BlackJackPeli extends Application {
     @Override
     public void start(Stage primaryStage) {
 
-        /*KorttiPakka pakka = new KorttiPakka(1);
+        KorttiPakka pakka = new KorttiPakka(1);
         System.out.println(pakka);
 
-        PelaajanKasi pelaajanKasi = new PelaajanKasi();*/
+        PelaajanKasi pelaajanKasi = new PelaajanKasi();
 
         primaryStage.setTitle("BlackJack Peli!");
 
