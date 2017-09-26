@@ -78,8 +78,8 @@ public class BlackJackPeli extends Application {
         pelaajanKortitTextArea.setPrefHeight(300);
         pelaajanKortitTextArea.setPrefWidth(200);
         grid.add(pelaajanKortitTextArea, 2, 2);
-        //Label pelaajanKorttienSumma = new Label("Korttien summa: " + pelaajanKasi.selvitaSumma());
-        //grid.add(pelaajanKorttienSumma, 2, 3);
+        Label pelaajanKorttienSumma = new Label("Korttien summa: " + pelaajanKasi.selvitaSumma());
+        grid.add(pelaajanKorttienSumma, 2, 3);
 
         Label tietokoneenKortitLabel = new Label("Tietokoneen kortit:");
         grid.add(tietokoneenKortitLabel, 0, 1);
@@ -90,7 +90,7 @@ public class BlackJackPeli extends Application {
         tietokoneenKortitTextArea.setPrefWidth(200);
         grid.add(tietokoneenKortitTextArea, 0, 2);
 
-        /*int kortteja = 0;
+        int kortteja = 0;
         while (kortteja < 2) {
 
             Kortti jaettuKortti = pakka.jaaKortti();
@@ -98,9 +98,9 @@ public class BlackJackPeli extends Application {
             pelaajanKortitTextArea.appendText(jaettuKortti + "\n");
             System.out.println(jaettuKortti);
             kortteja++;
-        }*/
+        }
         
-        if (2 < 21) {
+        if (pelaajanKasi.selvitaSumma() < 21) {
             //Luo napin nimellä btn ja labelillä "Sign in"
             Button lisaaKortti = new Button("Lisää kortti");
             Button lopeta = new Button("Lopeta");
@@ -117,7 +117,7 @@ public class BlackJackPeli extends Application {
             hbBtn.getChildren().add(lisaaKortti);
             grid.add(hbBtn, 2, 4);
 
-            /*lisaaKortti.setOnAction(new EventHandler<ActionEvent>() {
+            lisaaKortti.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent event) {
                     Kortti lisaKortti = pakka.jaaKortti();
@@ -125,10 +125,10 @@ public class BlackJackPeli extends Application {
                     pelaajanKortitTextArea.appendText(lisaKortti + "\n");
                     pelaajanKorttienSumma.setText("Korttien summa: " + pelaajanKasi.selvitaSumma());
                 }
-            });*/
+            });
         }
 
-        //pelaajanKorttienSumma.setText("Korttien summa: " + pelaajanKasi.selvitaSumma());
+        pelaajanKorttienSumma.setText("Korttien summa: " + pelaajanKasi.selvitaSumma());
 
         Scene scene = new Scene(grid, 600, 600);
         primaryStage.setScene(scene);
