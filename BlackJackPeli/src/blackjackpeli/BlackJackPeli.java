@@ -96,7 +96,6 @@ public class BlackJackPeli extends Application {
             Kortti jaettuKortti = pakka.jaaKortti();
             pelaajanKasi.otaKortti(jaettuKortti);
             pelaajanKortitTextArea.appendText(jaettuKortti + "\n");
-            System.out.println(jaettuKortti);
             kortteja++;
         }
         

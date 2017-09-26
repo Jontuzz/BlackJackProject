@@ -36,5 +36,12 @@ public class TestaaPelaajanKasi {
         System.out.println(assa.selvitaSumma()); //TOIMII 1 = 11 + 5 = 16
         
         
+        PelaajanKasi jee = new PelaajanKasi();
+        jee.otaKortti(new Kortti(5, "Ruutu"));//pitäisi lisätä 5
+        jee.otaKortti(new Kortti(11, "Pata"));//pitäisi lisätä 11
+        
+        System.out.println("Jee: " + jee.selvitaSumma());
+        
+        
     }
 }
