@@ -31,7 +31,11 @@ public class MainTesti {
         PelaajanKasi assa = new PelaajanKasi();
         System.out.println("-----------------------------");
         assa.otaKortti(new Kortti(1, "Ruutu"));
-        //assa.otaKortti(new Kortti(5, "Ruutu"));
         System.out.println(assa.selvitaSumma()); //1 = 11;
+        
+        System.out.println("-----------------------------");
+        PelaajanKasi toimiiko = new PelaajanKasi();
+        toimiiko.otaKortti(new Kortti(5, "Hertta"));
+        System.out.println(toimiiko.selvitaSumma());
     }
 }
