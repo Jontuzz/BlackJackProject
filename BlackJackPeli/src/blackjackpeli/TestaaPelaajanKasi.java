@@ -11,6 +11,6 @@ package blackjackpeli;
  */
 public class TestaaPelaajanKasi {
     public static void main(String[] args) {
-        System.out.println("jee");
+        
     }
 }
